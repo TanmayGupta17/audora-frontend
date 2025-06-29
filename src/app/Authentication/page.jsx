@@ -73,7 +73,7 @@ export default function AuthPage() {
           headers: {
             "Content-Type": "application/json",
           },
-          body: JSON.stringify(signupData),
+          body: JSON.stringify(loginData),
         }
       );
 
