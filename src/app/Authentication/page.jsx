@@ -83,7 +83,7 @@ export default function AuthPage() {
         // Handle successful login (redirect, store token, etc.)
       } else {
         console.error("Login failed");
-        // window.location.href = "/Authentication";
+        window.location.href = "/Authentication";
       }
     } catch (error) {
       console.error("Login error:", error);
