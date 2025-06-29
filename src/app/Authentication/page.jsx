@@ -44,11 +44,11 @@ export default function AuthPage() {
 
       if (response.ok) {
         console.log("Signup successful");
-        res.redirect("/HomePage");
+        window.location.href("/HomePage");
         // Handle successful signup (redirect, show message, etc.)
       } else {
         console.error("Signup failed");
-        res.redirect("/Authentication");
+        window.location.href("/Authentication");
       }
     } catch (error) {
       console.error("Signup error:", error);
@@ -79,11 +79,11 @@ export default function AuthPage() {
 
       if (response.ok) {
         console.log("Login successful");
-        res.redirect("/HomePage");
+        window.location.href("/HomePage");
         // Handle successful login (redirect, store token, etc.)
       } else {
         console.error("Login failed");
-        res.redirect("/Authentication");
+        window.location.href("/Authentication");
       }
     } catch (error) {
       console.error("Login error:", error);
